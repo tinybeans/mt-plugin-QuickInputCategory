@@ -6,4 +6,4 @@ author_name: Tomohiro Okuwaki
 l10n_class: QuickInputCategory::L10N
 description: <__trans phrase="This is a Movable type Plugin that enables quick input of the category.">
 callbacks:
-    MT::App::CMS::template_source.list_category: $QuickInputCategory::QuickInputCategory::Callbacks::template_source
+    MT::App::CMS::template_source.list_category: $QuickInputCategory::QuickInputCategory::Callbacks::template_source_list_category

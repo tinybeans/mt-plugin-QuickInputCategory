@@ -1,7 +1,7 @@
 package QuickInputCategory::Callbacks;
 use strict;
 
-sub template_source {
+sub template_source_list_category {
     my ($cb, $app, $tmpl_ref) = @_;
     my $version = MT->version_id;
 
