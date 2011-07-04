@@ -58,7 +58,7 @@ __MTML__
     $$tmpl_ref =~ s/$target/$replace/g;
 
     $target = quotemeta q{<input type="text" name="<mt:var name="object_type" lower_case="1">_label" class="text short" placeholder="<__trans phrase="[_1] label" params="<mt:var name="object_label">" escape="js">" />};
-    $insert = q{<input type="text" name="<mt:var name="object_type" lower_case="1">_basename" class="text short" placeholder="<__trans phrase="Basename" escape="js">" />};
+    $insert = q{<input style="margin-left:5px;" type="text" name="<mt:var name="object_type" lower_case="1">_basename" class="text short" placeholder="<__trans phrase="Basename" escape="js">" />};
     $$tmpl_ref =~ s!($target)!$1$insert!;
 
     $target = quotemeta q/$form.css('margin-left', (nest.length+1)*indent).insertAfter($element).find('input[name=<mt:var name="object_label" lower_case="1">_label]').focus();/;
